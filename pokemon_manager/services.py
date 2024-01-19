@@ -1,0 +1,1 @@
+# public functions to share with anothers internal applications
