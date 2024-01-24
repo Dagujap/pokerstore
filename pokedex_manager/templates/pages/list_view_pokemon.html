@@ -1,0 +1,30 @@
+{% extends "../layouts/app.html" %}
+
+{% block title %}
+    Pokedex
+{% endblock %}
+
+{% block content %}
+<div class="row row-cols-1 row-cols-md-2">
+
+<div class="col mb-4">
+    {% for pokemon in pokemons %}
+    <div class="card">
+        <!-- <img src="https://picsum.photos/560/180" class="card-img-top" alt="..."> -->
+        <div class="card-body">
+            <h4 class="card-title">{{pokemon.name}}</h4>
+            <ul>
+                <li>
+                    <img src="{{pokemon.image}}">
+                </li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <!-- Button trigger modal -->
+        
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock%}

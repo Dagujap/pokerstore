@@ -2,6 +2,7 @@ import requests
 import json
 
 def pokemon_list() -> dict:
+    #TODO:¨return pagination
     try:
         res = requests.get("https://pokeapi.co/api/v2/pokemon")
         res = json.loads(res.content)
