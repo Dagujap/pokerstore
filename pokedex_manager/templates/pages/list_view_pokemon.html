@@ -1,0 +1,21 @@
+{% extends "../layouts/app.html" %}
+
+{% block title %}
+    Pokedex
+{% endblock %}
+
+{% block content %}
+
+{% for pokemon in pokemons %}
+<div class="col-md-4">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">{{pokemon.name}}</h5>
+            <img src="{{pokemon.image}}" class="img-fluid" alt="{{pokemon.name}}">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock%}
