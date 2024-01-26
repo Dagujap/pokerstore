@@ -16,7 +16,7 @@ def foo(request):
             "name": pokemon["name"],
             "image": images["front_default"],
         })
-
+        
     return render(
         request=request,
         template_name="pages/list_view_pokemon.html", 
